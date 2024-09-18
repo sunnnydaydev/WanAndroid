@@ -21,4 +21,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "WanAndroid"
 include(":app")
- 
+include(":uilayer")
