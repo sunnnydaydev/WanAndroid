@@ -4,31 +4,9 @@
 
 # 架构设计
 
-基于Google Android [官方推荐架构](https://developer.android.google.cn/topic/architecture?hl=zh-cn)
+![architecture](./pictures/architecture.png)
 
-+---------------------------+
-|        App Module          |  ---> 应用模块
-+---------------------------+
-|
-+---------------------------+
-|   Presentation Layer (UI)  |  ---> 表示层 (ViewModel, Fragment, Activity)
-+---------------------------+
-|
-+---------------------------+
-|      Domain Layer          |  ---> 领域层 (UseCases, Repository Interface)
-+---------------------------+
-|
-+---------------------------+
-|        Data Layer          |  ---> 数据层 (Repository Impl, Data Sources)
-+---------------------------+
-|
-+---------------------------+
-|        Core Module         |  ---> 核心模块 (网络、数据库、依赖注入)
-+---------------------------+
-|
-+---------------------------+
-|        BaseLib Module      |  ---> 基础模块 (通用工具类、常量等)
-+---------------------------+
+基于Google Android [官方推荐架构](https://developer.android.google.cn/topic/architecture?hl=zh-cn)
 
 ###### 1、Presentation Layer
 
