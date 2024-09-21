@@ -21,4 +21,8 @@ dependencyResolutionManagement {
 
 rootProject.name = "WanAndroid"
 include(":app")
-include(":uilayer")
+include(":ui")
+include(":domain")
+include(":data")
+include(":core")
+include(":baselib")
