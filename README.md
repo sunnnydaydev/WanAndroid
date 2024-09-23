@@ -4,9 +4,9 @@
 
 # 架构设计
 
-![architecture](./pictures/architecture.png)
+架构搭建基于Google Android [官方推荐架构](https://developer.android.google.cn/topic/architecture?hl=zh-cn)
 
-基于Google Android [官方推荐架构](https://developer.android.google.cn/topic/architecture?hl=zh-cn)
+![architecture](./pictures/architecture.png)
 
 ###### 1、Presentation Layer
 
@@ -53,6 +53,10 @@ Core 模块依赖于 BaseLib，用来获取基础的工具类。数据层和领�
 
 不依赖任何其他模块，独立存在。所有其他模块（包括 Core、Domain、Data 层等）都可以依赖它。
 
+todo MVI 架构图 + Base类封装
+
 # 总结
 
 [libs](./mds/libs.md)
+
+doing...
