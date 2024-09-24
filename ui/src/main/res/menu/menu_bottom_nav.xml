@@ -3,27 +3,27 @@
 
     <item
         android:id="@+id/fragment_home"
-        android:title="首页"
-        android:icon="@drawable/selector_tab_home" />
+        android:icon="@drawable/selector_tab_home_icon"
+        android:title="@string/tab_home" />
 
     <item
         android:id="@+id/fragment_official_account"
-        android:title="公众号"
-        android:icon="@mipmap/ic_launcher" />
+        android:icon="@drawable/selector_tab_official_account_icon"
+        android:title="@string/tab_official_account" />
 
     <item
         android:id="@+id/fragment_system"
-        android:title="体系"
-        android:icon="@mipmap/ic_launcher" />
+        android:icon="@drawable/selector_tab_system_icon"
+        android:title="@string/tab_system" />
 
     <item
         android:id="@+id/fragment_projects"
-        android:title="项目"
-        android:icon="@mipmap/ic_launcher" />
+        android:icon="@drawable/selector_tab_project_icon"
+        android:title="@string/tab_project" />
 
     <item
         android:id="@+id/fragment_profile"
-        android:title="我的"
-        android:icon="@mipmap/ic_launcher" />
+        android:icon="@drawable/selector_tab_profile_icon"
+        android:title="@string/tab_profile" />
 
 </menu>

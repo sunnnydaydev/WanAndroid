@@ -7,8 +7,8 @@
         android:id="@+id/main"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".activities.MainActivity"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        tools:context=".activities.MainActivity">
 
         <androidx.fragment.app.FragmentContainerView
             android:id="@+id/nav_host_container"
@@ -19,14 +19,21 @@
             app:defaultNavHost="true"
             app:navGraph="@navigation/nav_graph" />
 
+        <!-- 1、tab icon selector貌似不起作用， app:itemIconTint="@null"设置为这个后效果还是有问题。
+                默认使用的color_primary作为icon的选中颜色。假如不设置选中时无颜色变化。
+
+             2、tab text selector起作用，无问题。
+
+             3、todo：可以研究下 怎样设置能让icon的selector起作用。这里看着icon的selector起作用了其实是巧取，
+                      color_primary的颜色值设置为了icon & text选中的颜色。
+        -->
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/bottom_nav"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:menu="@menu/menu_bottom_nav"
             app:itemIconTint="@null"
-            app:itemTextColor="@null"
-            />
-
+            app:itemTextColor="@color/selector_tab_home_text"
+            app:labelVisibilityMode="selected"
+            app:menu="@menu/menu_bottom_nav" />
     </androidx.appcompat.widget.LinearLayoutCompat>
 </layout>
