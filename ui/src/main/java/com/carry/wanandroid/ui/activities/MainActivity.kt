@@ -14,13 +14,7 @@ import com.carry.wanandroid.ui.databinding.ActivityMainBinding
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
         val binding:ActivityMainBinding = DataBindingUtil.setContentView(this,R.layout.activity_main)
-        ViewCompat.setOnApplyWindowInsetsListener(binding.main) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
-        }
         NavigationUI.setupWithNavController(binding.bottomNav,getNavController())
     }
     private fun getNavController() = (supportFragmentManager.findFragmentById(R.id.nav_host_container) as NavHostFragment).navController
