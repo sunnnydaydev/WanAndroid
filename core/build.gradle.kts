@@ -46,8 +46,17 @@ dependencies {
      * 2、 core layer implementation okhttp 库,上层模块 moduleA 无论是implementation，还是api都不能使用okhttp库
      *
      * 收获：
-     * aip 能传递到上层
+     * api 能传递到上层
      * implementation 只能当前使用
+     *
+     * 换句话说
+     *
+     * 当前模块A implementation 三方库 只有当前模块能使用三方库中的类，
+     * 当前模块A api            三方库 当前模块上一模块也能使用三方库中的类，
+     *
+     * 这个规则对模块之间的类同样适用。我们可以把其中一个模块当做三方库。
+     *
+     * todo 写几个test 类整理下这个对则。
      *
      * */
 

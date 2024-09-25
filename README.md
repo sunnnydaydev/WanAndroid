@@ -59,4 +59,6 @@ todo MVI 架构图 + Base类封装
 
 [libs](./mds/libs.md)
 
+[dependencies](./mds/dependencies)
+
 doing...
